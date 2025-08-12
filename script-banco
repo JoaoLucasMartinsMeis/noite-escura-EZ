@@ -1,0 +1,10 @@
+//*CREATE DATABASE IF NOT EXISTS noite_escura CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE noite_escura;
+
+CREATE TABLE comentarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    imagem_id INT NOT NULL,
+    nome VARCHAR(100) NOT NULL,
+    texto_comentario TEXT NOT NULL,
+    data_comentario DATETIME NOT NULL
+);//
