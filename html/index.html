@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria com Comentários</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        .post {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        .post img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .comments {
+            margin-top: 15px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+        .comment {
+            background: #f7f7f7;
+            padding: 8px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+        .comment strong {
+            color: #273F4F;
+        }
+        .comment-form {
+            display: flex;
+            margin-top: 10px;
+        }
+        .comment-form input {
+            flex: 1;
+            padding: 8px;
+            border-radius: 6px 0 0 6px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+        .comment-form button {
+            padding: 8px 12px;
+            border: none;
+            background: #FE7743;
+            color: white;
+            border-radius: 0 6px 6px 0;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background: #e36638;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Galeria de Imagens com Comentários</h1>
+
+    <div id="gallery"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* ---------- Estilo geral ---------- */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ---------- Cabeçalho ---------- */
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff5c33;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ff5c33;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ---------- Seções de imagens ---------- */
+.imagem-texto {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease;
+}
+
+.imagem-texto:hover {
+    transform: scale(1.02);
+}
+
+.imagem-texto img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.imagem-texto p {
+    text-align: justify;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* ---------- Rodapé e formulário ---------- */
+footer {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 8px;
+}
+
+footer h2, footer h3 {
+    color: #ff5c33;
+    margin-bottom: 10px;
+}
+
+/* ---------- Campos do formulário ---------- */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff5c33;
+}
+
+input[type="text"], textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #fff;
+    resize: none;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ff5c33;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+/* ---------- Lista de comentários ---------- */
+.comentarios-container {
+    margin-top: 20px;
+}
+
+.comentario {
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-left: 4px solid #ff5c33;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.comentario h4 {
+    margin: 0;
+    color: #ff5c33;
+}
+
+.comentario .data {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.comentario p {
+    margin-top: 5px;
+    color: #ccc;
+}
+
+/* ---------- Responsividade ---------- */
+@media (max-width: 768px) {
+    .imagem-texto, footer {
+        margin: 20px;
+        padding: 15px;
+    }
+}
